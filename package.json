@@ -1,0 +1,27 @@
+{
+  "name": "mcp-klaudium",
+  "version": "0.1.0",
+  "description": "Enhanced MCP memory server with dynamic compression and thinking process",
+  "license": "MIT",
+  "author": "MilosBastaja",
+  "type": "module",
+  "bin": {
+    "mcp-klaudium": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.3",
+    "shx": "^0.3.4",
+    "typescript": "^5.6.2"
+  }
+}
